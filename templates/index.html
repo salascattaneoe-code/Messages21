@@ -1200,7 +1200,7 @@ async function loadConversations() {
   // Update or create items (in order)
   result.conversations.forEach(c => {
     const preview = c.has_file
-      ? '📎 ' + (c.last_content || 'Archivo')
+      ? '🔗 ' + (c.last_content || 'Archivo')
       : (c.last_content || '');
     const previewText = (c.is_mine ? 'Tú: ' : '') + preview;
 
